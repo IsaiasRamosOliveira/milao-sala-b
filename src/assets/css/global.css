@@ -56,8 +56,16 @@
 
 #article {
     grid-area: article;
-    overflow: hidden scroll;
+    overflow-y: auto;
     background-color: blue;
+}
+
+#article::-webkit-scrollbar {
+  width: 4px;
+}
+#article::-webkit-scrollbar-thumb {
+  background-color: #272830;
+  border-radius: 4%;
 }
 
 @media (max-width: 1024px) {
