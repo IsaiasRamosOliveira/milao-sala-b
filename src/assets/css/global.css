@@ -7,18 +7,18 @@
 
 #container {
     height: 100vh;
-    padding: 0 80px;
     display: grid;
     grid-template-columns:1fr;
     grid-template-rows: 60px 1fr;
     grid-template-areas:
-      "header header "
+      "header header"
       "main main";
-    background-color: pink;
+    background-color: #13131a; 
     overflow: hidden;
 }
 
 #header {
+    padding: 0 80px;
     grid-area: header;
     overflow: hidden;
     background-color: grey;
@@ -27,7 +27,8 @@
 #main {
     grid-area: main;
     overflow: hidden;
-  }
+    padding: 0 80px;
+}
 
 #section {
     width: 100%;
