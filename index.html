@@ -1,19 +1,57 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Milao</title>
-    <link rel="stylesheet" href="/src/assets/css/global.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Milao</title>
+  <link rel="stylesheet" href="/src/assets/css/global.css">
+  <link rel="stylesheet" href="src/assets/css/filters.css">
 </head>
+
 <body id="container">
-    <header id="header">header</header>
-    <main id="main">
-        <section id="section">
-            <div id="filter">filter</div>
-            <aside id="aside">aside</aside>
-            <article id="article">article</article>
-        </section>
-    </main>
+  <header id="header">header</header>
+  <main id="main">
+    <section id="section">
+      <div id="filter" class="filter">
+        <div class="filters">
+          <div class="filters__part filters__part--1">
+            <span class="filters__part--searchIcon">
+              <img src="src/assets/imgs/filters/search-img.png" alt="">
+            </span>
+            <span class="filters__part--filteredItem">Product Designer
+              <button class="filteredItem--remove"><img src="src/assets/imgs/filters/remove-icon.png" alt=""></button>
+            </span>
+            <span class="filters__part--filteredItem">UI/UX Designer
+              <button class="filteredItem--remove"><img src="src/assets/imgs/filters/remove-icon.png" alt=""></button>
+            </span>
+          </div>
+          <div class="filters__part filters__part--2 filters__part--2__to__part--5">
+            <button>
+              <img class="filters__part--filterSymbol" src="src/assets/imgs/filters/place-localizer.png"
+                alt="">Londontowne, MD</button>
+          </div>
+          <div class="filters__part filters__part--3 filters__part--2__to__part--5">
+            <button>
+              <img class="filters__part--filterSymbol" src="src/assets/imgs/filters/suitcase.png" alt="">
+              <p>Job Type</p>
+            </button>
+          </div>
+          <div class="filters__part filters__part--4 filters__part--2__to__part--5">
+            <button>
+              <img class="filters__part--filterSymbol" src="src/assets/imgs/filters/salary.png" alt="">
+              Salary Range
+            </button>
+          </div>
+          <div class="filters__part filters__part--5 filters__part--2__to__part--5">
+            <button>Find Job</button>
+          </div>
+        </div>
+      </div>
+      <aside id="aside">aside</aside>
+      <article id="article">article</article>
+    </section>
+  </main>
 </body>
+
 </html>

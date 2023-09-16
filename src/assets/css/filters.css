@@ -1,0 +1,109 @@
+#filter {
+  background-color: #13131A;
+  padding: 20px 5px;
+}
+
+.filters {
+  min-width: 600px;
+  max-width: 1820px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #1C1C24;
+}
+
+.filters__part {
+  height: 100%;
+  border: 1px solid #25252D;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+
+.filters__part--1 {
+  border-radius: 10px 0 0 10px;
+  padding-left: 30px;
+  width: 540px;
+  gap: 10px;
+}
+
+.filters__part--searchIcon img {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+
+.filters__part--filteredItem {
+  background-color: transparent;
+  padding: 10px;
+  height: 30px;
+  border: 1px solid #747984;
+  color: white;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.filteredItem--remove {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.filteredItem--remove img {
+  height: 10px;
+  width: 10px;
+}
+
+.filters__part--2__to__part--5 button{
+  background-color: transparent;
+  border: 0;
+  color: #65656F;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  font-size: 18px;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filters__part button:hover {
+  color: white;
+}
+
+
+.filters__part--filterSymbol {
+  width: 16px;
+}
+
+.filters__part--2 {
+  width: 390px;
+}
+
+.filters__part--3 {
+  width: 370px;
+}
+
+.filters__part--4 {
+  width: 430px;
+}
+
+.filters__part--5 {
+  width: 190px;
+  border-radius: 0 10px 10px 0;
+  background-color: #0062FF;
+}
+
+.filters__part--5 button {
+  color: white;
+}
+
+@media (max-width: 1490px) {
+  .filters__part--filteredItem {
+    height: 40px;
+  }
+}
