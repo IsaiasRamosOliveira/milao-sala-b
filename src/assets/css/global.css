@@ -52,6 +52,7 @@
     grid-area: aside;
     overflow: hidden;
     background-color: darkgreen;
+    overflow-y: auto;
 }
 
 #article {
@@ -60,9 +61,12 @@
     background-color: blue;
 }
 
+#aside::-webkit-scrollbar,
 #article::-webkit-scrollbar {
-    width: 4px;
+    width: 4px; 
 }
+
+#aside::-webkit-scrollbar-thumb, 
 #article::-webkit-scrollbar-thumb {
     background-color: #272830;
     border-radius: 4%;
