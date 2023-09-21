@@ -1,12 +1,13 @@
 #filter {
   background-color: #13131A;
-  padding: 20px 5px;
+  display: flex;
+  align-items: center;
 }
 
 .filters {
   min-width: 600px;
   max-width: 1820px;
-  height: 60px;
+  height: 70px;
   display: flex;
   align-items: center;
   border-radius: 10px;
@@ -18,14 +19,13 @@
   border: 1px solid #25252D;
   display: flex;
   align-items: center;
-  justify-content: center;
-} 
+}
 
-.filters__part--1 {
+.filters__part--search {
   border-radius: 10px 0 0 10px;
   padding-left: 30px;
   width: 540px;
-  gap: 10px;
+  gap: 15px;
 }
 
 .filters__part--searchIcon img {
@@ -34,16 +34,22 @@
   cursor: pointer;
 }
 
-.filters__part--filteredItem {
+.filters__part__filteredItem {
   background-color: transparent;
   padding: 10px;
+  width: 150px;
   height: 30px;
   border: 1px solid #747984;
   color: white;
   border-radius: 8px;
   display: flex;
   align-items: center;
-  gap: 5px;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.filters__part__filteredItem--UiUx {
+  width: 140px;
 }
 
 .filteredItem--remove {
@@ -57,7 +63,7 @@
   width: 10px;
 }
 
-.filters__part--2__to__part--5 button{
+.filters__part--buttons button {
   background-color: transparent;
   border: 0;
   color: #65656F;
@@ -67,12 +73,13 @@
   font-size: 18px;
   gap: 10px;
   display: flex;
+  padding-left: 40px;
   align-items: center;
-  justify-content: center;
 }
 
 .filters__part button:hover {
   color: white;
+  transition: 400ms;
 }
 
 
@@ -80,30 +87,35 @@
   width: 16px;
 }
 
-.filters__part--2 {
+.filters__part--location {
   width: 390px;
 }
 
-.filters__part--3 {
+.filters__part--jobType {
   width: 370px;
 }
 
-.filters__part--4 {
+.filters__part--salary {
   width: 430px;
 }
 
-.filters__part--5 {
+.filters__part--findJob {
   width: 190px;
   border-radius: 0 10px 10px 0;
   background-color: #0062FF;
 }
 
-.filters__part--5 button {
+.filters__part--findJob button {
   color: white;
+  font-weight: bold;
 }
 
 @media (max-width: 1490px) {
   .filters__part--filteredItem {
     height: 40px;
+  }
+
+  .filters__part--buttons button {
+    padding-left: 0;
   }
 }
