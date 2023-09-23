@@ -1,5 +1,5 @@
 #filter {
-  background-color: #13131A;
+  background-color: #13131a;
   display: flex;
   align-items: center;
 }
@@ -11,19 +11,20 @@
   display: flex;
   align-items: center;
   border-radius: 10px;
-  background-color: #1C1C24;
+  background-color: #1c1c24;
 }
 
 .filters__part {
   height: 100%;
-  border: 1px solid #25252D;
+  border: 1px solid #25252d;
   display: flex;
   align-items: center;
+  padding: 35px 0;
 }
 
 .filters__part--search {
   border-radius: 10px 0 0 10px;
-  padding-left: 30px;
+  padding: 0 30px;
   width: 540px;
   gap: 15px;
 }
@@ -66,7 +67,7 @@
 .filters__part--buttons button {
   background-color: transparent;
   border: 0;
-  color: #65656F;
+  color: #65656f;
   width: 100%;
   height: 100%;
   cursor: pointer;
@@ -81,7 +82,6 @@
   color: white;
   transition: 400ms;
 }
-
 
 .filters__part--filterSymbol {
   width: 16px;
@@ -102,7 +102,7 @@
 .filters__part--findJob {
   width: 190px;
   border-radius: 0 10px 10px 0;
-  background-color: #0062FF;
+  background-color: #0062ff;
 }
 
 .filters__part--findJob button {
@@ -113,9 +113,5 @@
 @media (max-width: 1490px) {
   .filters__part--filteredItem {
     height: 40px;
-  }
-
-  .filters__part--buttons button {
-    padding-left: 0;
   }
 }
