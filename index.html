@@ -1,164 +1,349 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Milao</title>
-    <link rel="stylesheet" href="/src/assets/css/global.css">
-    <link rel="stylesheet" href="/src/assets/css/aside.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-</head>
-<body id="container">
+    <link rel="stylesheet" href="/src/assets/css/global.css" />
+    <link rel="stylesheet" href="src/assets/css/filters.css" />
+    <link rel="stylesheet" href="/src/assets/css/aside.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body id="container">
     <header id="header">header</header>
     <main id="main">
       <section id="section">
-        <div id="filter">filter</div>
+        <div id="filter" class="filter">
+          <div class="filters">
+            <div class="filters__part filters__part--search">
+              <span class="filters__part--searchIcon">
+                <img src="src/assets/imgs/filters/search-img.png" alt="" />
+              </span>
+              <span class="filters__part__filteredItem"
+                >Product Designer
+                <button class="filteredItem--remove">
+                  <img src="src/assets/imgs/filters/remove-icon.png" alt="" />
+                </button>
+              </span>
+              <span
+                class="filters__part__filteredItem filters__part__filteredItem--UiUx"
+                >UI/UX Designer
+                <button class="filteredItem--remove">
+                  <img src="src/assets/imgs/filters/remove-icon.png" alt="" />
+                </button>
+              </span>
+            </div>
+            <div
+              class="filters__part filters__part--location filters__part--buttons"
+            >
+              <button>
+                <img
+                  class="filters__part--filterSymbol"
+                  src="src/assets/imgs/filters/place-localizer.png"
+                  alt=""
+                />Londontowne, MD
+              </button>
+            </div>
+            <div
+              class="filters__part filters__part--jobType filters__part--buttons"
+            >
+              <button>
+                <img
+                  class="filters__part--filterSymbol"
+                  src="src/assets/imgs/filters/suitcase.png"
+                  alt=""
+                />
+                <p>Job Type</p>
+              </button>
+            </div>
+            <div
+              class="filters__part filters__part--salary filters__part--buttons"
+            >
+              <button>
+                <img
+                  class="filters__part--filterSymbol"
+                  src="src/assets/imgs/filters/salary.png"
+                  alt=""
+                />
+                Salary Range
+              </button>
+            </div>
+            <div
+              class="filters__part filters__part--findJob filters__part--buttons"
+            >
+              <button>Find Job</button>
+            </div>
+          </div>
+        </div>
         <aside id="aside">
           <form class="aside__form" action="#" method="get">
             <legend class="form__title">Create Job Alert</legend>
-            <p class="form__text">Create a job alert now and never <br> miss a job.</p>
-            <input class="form__search" type="search" name="search" placeholder="Enter job keyword" required>
-            <button class="form__submit" type="submit">Create Job Alerts</button>
+            <p class="form__text">
+              Create a job alert now and never <br />
+              miss a job.
+            </p>
+            <input
+              class="form__search"
+              type="search"
+              name="search"
+              placeholder="Enter job keyword"
+              required
+            />
+            <button class="form__submit" type="submit">
+              Create Job Alerts
+            </button>
           </form>
           <div class="aside__group" action="#" method="get">
             <div class="groups__group">
-              <h3 class="group__title"> Type of Employment
+              <h3 class="group__title">
+                Type of Employment
                 <span class="material-symbols-outlined">expand_less</span>
               </h3>
               <div class="group__select">
                 <div class="group__option">
-                  <input id="full_jobs" class="group__check group__check--checked" type="checkbox" name="full_jobs">
-                  <label class="group__text" for="full_jobs">Full Time Jobs</label>
+                  <input
+                    id="full_jobs"
+                    class="group__check group__check--checked"
+                    type="checkbox"
+                    name="full_jobs"
+                  />
+                  <label class="group__text" for="full_jobs"
+                    >Full Time Jobs</label
+                  >
                 </div>
                 <span class="group__number">56</span>
               </div>
               <div class="group__select">
                 <div class="group__option">
-                  <input id="part_jobs" class="group__check group__check--checked" type="checkbox" name="part_jobs">
-                  <label class="group__text" for="part_jobs">Part Time Jobs</label>
+                  <input
+                    id="part_jobs"
+                    class="group__check group__check--checked"
+                    type="checkbox"
+                    name="part_jobs"
+                  />
+                  <label class="group__text" for="part_jobs"
+                    >Part Time Jobs</label
+                  >
                 </div>
                 <span class="group__number">34</span>
               </div>
               <div class="group__select">
                 <div class="group__option">
-                  <input id="remote_jobs" class="group__check group__check--checked" type="checkbox" name="remote_jobs">
-                  <label class="group__text" for="remote_jobs">Remote Jobs</label>
+                  <input
+                    id="remote_jobs"
+                    class="group__check group__check--checked"
+                    type="checkbox"
+                    name="remote_jobs"
+                  />
+                  <label class="group__text" for="remote_jobs"
+                    >Remote Jobs</label
+                  >
                 </div>
                 <span class="group__number">24</span>
               </div>
               <div class="group__select">
                 <div class="group__option">
-                  <input id="internship_jobs" class="group__check group__check--checked" type="checkbox" name="internship_jobs">
-                  <label class="group__text" for="internship_jobs">Internship Jobs</label>
+                  <input
+                    id="internship_jobs"
+                    class="group__check group__check--checked"
+                    type="checkbox"
+                    name="internship_jobs"
+                  />
+                  <label class="group__text" for="internship_jobs"
+                    >Internship Jobs</label
+                  >
                 </div>
                 <span class="group__number">27</span>
               </div>
               <div class="group__select">
                 <div class="group__option">
-                  <input id="contract_jobs" class="group__check group__check--checked" type="checkbox" name="contract_jobs">
-                  <label class="group__text" for="contract_jobs">Contract</label>
+                  <input
+                    id="contract_jobs"
+                    class="group__check group__check--checked"
+                    type="checkbox"
+                    name="contract_jobs"
+                  />
+                  <label class="group__text" for="contract_jobs"
+                    >Contract</label
+                  >
                 </div>
                 <span class="group__number">78</span>
               </div>
               <div class="group__select">
                 <div class="group__option">
-                  <input id="training_jobs" class="group__check group__check--checked" type="checkbox" name="training_jobs">
-                  <label class="group__text" for="training_jobs">Training Jobs</label>
+                  <input
+                    id="training_jobs"
+                    class="group__check group__check--checked"
+                    type="checkbox"
+                    name="training_jobs"
+                  />
+                  <label class="group__text" for="training_jobs"
+                    >Training Jobs</label
+                  >
                 </div>
                 <span class="group__number">28</span>
               </div>
-        
             </div>
             <div class="groups__group">
-              <h3 class="group__title"> Seniority Level
+              <h3 class="group__title">
+                Seniority Level
                 <span class="material-symbols-outlined">expand_less</span>
               </h3>
               <div class="group__select">
                 <div class="group__option">
-                  <input id="student_lvl" class="group__check group__check--checked" type="checkbox" name="student_lvl">
-                  <label class="group__text" for="student_lvl">Student Level</label>
+                  <input
+                    id="student_lvl"
+                    class="group__check group__check--checked"
+                    type="checkbox"
+                    name="student_lvl"
+                  />
+                  <label class="group__text" for="student_lvl"
+                    >Student Level</label
+                  >
                 </div>
                 <span class="group__number">98</span>
               </div>
               <div class="group__select">
                 <div class="group__option">
-                  <input id="entry_lvl" class="group__check group__check--checked" type="checkbox" name="entry_lvl">
+                  <input
+                    id="entry_lvl"
+                    class="group__check group__check--checked"
+                    type="checkbox"
+                    name="entry_lvl"
+                  />
                   <label class="group__text" for="entry_lvl">Entry Level</label>
                 </div>
                 <span class="group__number">44</span>
               </div>
               <div class="group__select">
                 <div class="group__option">
-                  <input id="mid_lvl" class="group__check group__check--checked" type="checkbox" name="mid_lvl">
+                  <input
+                    id="mid_lvl"
+                    class="group__check group__check--checked"
+                    type="checkbox"
+                    name="mid_lvl"
+                  />
                   <label class="group__text" for="mid_lvl">Mid Level</label>
                 </div>
                 <span class="group__number">35</span>
               </div>
               <div class="group__select">
                 <div class="group__option">
-                  <input id="senior_lvl" class="group__check group__check--checked" type="checkbox" name="senior_lvl">
-                  <label class="group__text" for="senior_lvl">Senior Level</label>
+                  <input
+                    id="senior_lvl"
+                    class="group__check group__check--checked"
+                    type="checkbox"
+                    name="senior_lvl"
+                  />
+                  <label class="group__text" for="senior_lvl"
+                    >Senior Level</label
+                  >
                 </div>
                 <span class="group__number">45</span>
               </div>
               <div class="group__select">
                 <div class="group__option">
-                  <input id="directors_lvl" class="group__check group__check--checked" type="checkbox" name="directors_lvl">
-                  <label class="group__text" for="directors_lvl">Directors Level</label>
+                  <input
+                    id="directors_lvl"
+                    class="group__check group__check--checked"
+                    type="checkbox"
+                    name="directors_lvl"
+                  />
+                  <label class="group__text" for="directors_lvl"
+                    >Directors Level</label
+                  >
                 </div>
                 <span class="group__number">21</span>
               </div>
               <div class="group__select">
                 <div class="group__option">
-                  <input id="vp_lvl" class="group__check group__check--checked" type="checkbox" name="vp_lvl">
+                  <input
+                    id="vp_lvl"
+                    class="group__check group__check--checked"
+                    type="checkbox"
+                    name="vp_lvl"
+                  />
                   <label class="group__text" for="vp_lvl">VP or Above</label>
                 </div>
                 <span class="group__number">56</span>
               </div>
-        
             </div>
             <div class="groups__group">
-              <h3 class="group__title"> Salary Range
+              <h3 class="group__title">
+                Salary Range
                 <span class="material-symbols-outlined">expand_less</span>
               </h3>
               <div class="group__select">
                 <div class="group__option">
-                  <input id="range_1" class="group__check group__check--checked" type="checkbox" name="range_1">
+                  <input
+                    id="range_1"
+                    class="group__check group__check--checked"
+                    type="checkbox"
+                    name="range_1"
+                  />
                   <label class="group__text" for="range_1">$700 - $1000</label>
                 </div>
                 <span class="group__number">34</span>
               </div>
               <div class="group__select">
                 <div class="group__option">
-                  <input id="range_2" class="group__check group__check--checked" type="checkbox" name="range_2">
+                  <input
+                    id="range_2"
+                    class="group__check group__check--checked"
+                    type="checkbox"
+                    name="range_2"
+                  />
                   <label class="group__text" for="range_2">$1000 - $1200</label>
                 </div>
                 <span class="group__number">67</span>
               </div>
               <div class="group__select">
                 <div class="group__option">
-                  <input id="range_3" class="group__check group__check--checked" type="checkbox" name="range_3">
+                  <input
+                    id="range_3"
+                    class="group__check group__check--checked"
+                    type="checkbox"
+                    name="range_3"
+                  />
                   <label class="group__text" for="range_3">$1200 - $1400</label>
                 </div>
                 <span class="group__number">22</span>
               </div>
               <div class="group__select">
                 <div class="group__option">
-                  <input id="range_4" class="group__check group__check--checked" type="checkbox" name="range_4">
+                  <input
+                    id="range_4"
+                    class="group__check group__check--checked"
+                    type="checkbox"
+                    name="range_4"
+                  />
                   <label class="group__text" for="range_4">$1500 - $1800</label>
                 </div>
                 <span class="group__number">12</span>
               </div>
               <div class="group__select">
                 <div class="group__option">
-                  <input id="range_5" class="group__check group__check--checked" type="checkbox" name="range_5">
+                  <input
+                    id="range_5"
+                    class="group__check group__check--checked"
+                    type="checkbox"
+                    name="range_5"
+                  />
                   <label class="group__text" for="range_5">$2000 - $3000</label>
                 </div>
                 <span class="group__number">26</span>
               </div>
               <div class="group__select">
                 <div class="group__option">
-                  <input id="range_6" class="group__check group__check--checked" type="checkbox" name="range_6">
+                  <input
+                    id="range_6"
+                    class="group__check group__check--checked"
+                    type="checkbox"
+                    name="range_6"
+                  />
                   <label class="group__text" for="range_6">$3000 - $4000</label>
                 </div>
                 <span class="group__number">15</span>
@@ -169,5 +354,5 @@
         <article id="article">article</article>
       </section>
     </main>
-</body>
+  </body>
 </html>
