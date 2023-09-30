@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="src/assets/css/cards.css" />
     <link rel="stylesheet" href="src/assets/css/filters.css" />
     <link rel="stylesheet" href="/src/assets/css/aside.css" />
-    <link rel="stylesheet" href="/src/assets/css/header.css">
+    <link rel="stylesheet" href="/src/assets/css/header.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,7 +21,30 @@
     />
   </head>
   <body id="container">
-    <header id="header">header</header>
+    <header id="header">
+      <div class="header__logo">
+        <a href="#" class="logo__banner">
+          <img class="banner__img" src="/src/assets/imgs/header/logo.png" alt="header logo">
+          <h1 class="banner__title">Milao</h1>
+        </a>
+      </div>
+      <nav class="header__filters">
+        <a href="#" class="filters__filter">Find Job</a>
+        <a href="#" class="filters__filter">Company Review</a>
+        <a href="#" class="filters__filter">Find Salaries</a>
+      </nav>
+      <div class="header__account">
+        <button class="account__notifi account__buttons--cursor">
+          <img class="notifi__img" src="/src/assets/imgs/header/check_box_outline.png" alt="">
+        </button>
+        <span class="account__bar"></span>
+        <a href="#" class="account__profile">
+          <img class="profile__img" src="/src/assets/imgs/header/profile.jpg" alt="">
+          <p class="profile__name">Suhayel A. Nasim</p>
+        </a>
+        <button class="material-symbols-outlined account__buttons--cursor">arrow_drop_down</button>
+      </div>
+    </header>
     <main id="main">
       <section id="section">
         <div id="filter" class="filter">
