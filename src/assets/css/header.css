@@ -1,0 +1,95 @@
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    background-color: #1c1c24; 
+    color: #e2dcdc;
+}
+
+/* header logo */
+.logo__banner {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+}
+
+.banner__img {
+    width: 15px;
+    height: 15px;
+}
+
+.banner__title {
+    font-size: 15px;
+    color: #9e9ea5;
+}
+
+/* header filters */
+.header__filters {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-left: 9%;
+}
+
+.filters__filter {
+    color: #9e9ea5;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.filters__filter:hover {
+    color: #ffffff;
+}
+
+/* header account */
+.header__account {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.account__buttons--cursor {
+    cursor: pointer;
+}
+
+.account__notifi,
+.material-symbols-outlined {
+    border: none;
+    background-color: #1c1c24;
+}
+
+.account__profile {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #e2dcdc;
+}
+
+.account__bar {
+    width: 1.5px;
+    height: 25px;
+    background-color: #6c6c70;
+}
+
+.material-symbols-outlined {
+    color: #8e8e92;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+.notifi__img {
+    width: 15px;
+    height: 15px;
+}
+
+.profile__img {
+    width: 25px;
+    height: 25px;
+    border-radius: 12px;
+}
